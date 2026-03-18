@@ -33,7 +33,7 @@ test('should return error message when response status is not ok', () => {
     { status: 'invalid' }
   ];
   
-  errorResponses.forEach((mockResponse, index) => {
+  errorResponses.forEach((mockResponse) => {
     fetchData.mockReturnValue(mockResponse);
     
     const result = getLevel(999);

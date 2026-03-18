@@ -6,5 +6,5 @@ export function loadUser(id) {
 }
 
 export function saveUser(user) {
-  throw new Error('Unimplemented');
+  throw new Error(`Unimplemented for user: ${JSON.stringify(user)}`);
 }

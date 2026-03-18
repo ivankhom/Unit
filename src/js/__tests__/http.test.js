@@ -1,8 +1,5 @@
 import fetchData, { httpGet, httpPost } from '../http';
 
-const originalHttpGet = httpGet;
-const originalHttpPost = httpPost;
-
 describe('http module', () => {
   test('httpGet should throw error with url', () => {
     expect(() => {
